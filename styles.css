@@ -1,3 +1,4 @@
+
 body {
     color: #000;
     background-color: #f1f1f1;
@@ -26,6 +27,7 @@ html, body, h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     box-sizing: inherit;
     line-height: 18px;
+    animation: moveRight 1.5s ease;
 }
 
 img {
@@ -138,6 +140,7 @@ hr {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     box-sizing: inherit;
     line-height: 18px;
+    animation: drop 1.5s ease;
 }
 
 .about-me {
@@ -289,8 +292,28 @@ footer p {
     box-sizing: border-box;
 }
 .background-percent div{
-     -webkit-transition: all 1s ease; /* Safari */
-    transition: all 1s ease; 
+     -webkit-transition: all 2s ease; /* Safari */
+    transition: all 2s ease; 
+}
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes moveRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 @media only screen and (max-width: 700px) {
 
