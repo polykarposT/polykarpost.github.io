@@ -3,283 +3,500 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Polykarpos Tiftikoglou - Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Polykarpos Tiftikoglou - Software Developer from Greece specializing in Python, Django, and full-stack development" />
+    <meta name="author" content="Polykarpos Tiftikoglou" />
+    <meta name="theme-color" content="#3b82f6" />
+    
+    <title>Polykarpos Tiftikoglou - Software Developer</title>
 
-    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
-        type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Polykarpos Tiftikoglou</span>
-            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                    src="assets/img/profile.jpg" alt="" /></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-            </ul>
+<body id="page-top" data-theme="light">
+    <!-- Theme toggle button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+        <i class="fas fa-sun" aria-hidden="true"></i>
+    </button>
+
+    <nav class="navbar" id="sidebar-nav" role="navigation" aria-label="Main navigation">
+        <div class="navbar-brand">
+            <a href="#page-top" class="nav-brand-link" aria-label="Go to top of page">
+                <span class="nav-name">Polykarpos Tiftikoglou</span>
+                <img class="profile-image" src="assets/img/profile.jpg" alt="Polykarpos Tiftikoglou profile photo" />
+            </a>
         </div>
+        
+        <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <ul class="nav-menu" id="nav-menu" role="menubar">
+            <li role="none"><a class="nav-link" href="#about" role="menuitem">About</a></li>
+            <li role="none"><a class="nav-link" href="#experience" role="menuitem">Experience</a></li>
+            <li role="none"><a class="nav-link" href="#education" role="menuitem">Education</a></li>
+            <li role="none"><a class="nav-link" href="#skills" role="menuitem">Skills</a></li>
+            <li role="none"><a class="nav-link" href="#achievements" role="menuitem">Achievements</a></li>
+            <li role="none"><a class="nav-link" href="#contact" role="menuitem">Contact</a></li>
+        </ul>
     </nav>
-    <div class="container-fluid p-0">
-        <!-- About-->
-        <section class="resume-section" id="about">
-            <div class="resume-section-content">
-                <h1 class="mb-0">
-                    Polykarpos
-                    <span class="text-primary">Tiftikoglou</span>
-                </h1>
-                <div class="subheading mb-5">
-                    Veria, Greece ·
-                    <a href="#"> ptiftikoglou[at]gmail.com</a>
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" id="about">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="hero-greeting">Hello, I'm</span>
+                        <span class="hero-name">Polykarpos Tiftikoglou</span>
+                    </h1>
+                    <p class="hero-subtitle">Python Backend Software Developer</p>
+                    <p class="hero-location">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        Veria, Greece
+                    </p>
+                    <p class="hero-description">
+                        Passionate software developer with expertise in Python, Django, and FastAPI backend web development. 
+                        Currently building innovative solutions at Modulus S.A, with a focus on backend systems, APIs, and modern web applications.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#experience" class="btn btn-outline">View My Work</a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/polykarpos-tiftikoglou-8a8762108/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn profile">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/polykarposT" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub profile">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://x.com/polykarpos_T" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X profile">
+                            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:ptiftikoglou@gmail.com" class="social-link" aria-label="Email contact">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
-                <p class="lead mb-5">I'm Polykarpos, a Software Developer from Greece. I love technology and
-                    building software. I'm currently working as a Python Backend Developer at Modulus S.A . I'm always
-                    open for new opportunities
-                    that will help me improve and test my knowledge and skills on software development and
-                    learn from the experts in the field. It is my firm belief that I will be a great asset to your team.
-                </p>
-                <div class="social-icons">
-                    <a class="social-icon" target="_blank"
-                        href="https://www.linkedin.com/in/polykarpos-tiftikoglou-8a8762108/"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" target="_blank" href="https://github.com/polykarposT"><i
-                            class="fab fa-github"></i></a>
-                    <a class="social-icon" target="_blank" href="https://twitter.com/polykarpos_T"><i
-                            class="fab fa-twitter"></i></a>
+                
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="floating-card">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="floating-card">
+                            <i class="fab fa-js"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <hr class="m-0" />
-        <!-- Experience-->
-        <section class="resume-section" id="experience">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Experience</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Python Developer</h3>
-                        <div class="subheading mb-3">Modulus S.A</div>
-                        <p>Currently working on a project with FastAPI, SQLModel, SQLAlchemy, MariaDB and Redis.</p>
-                        <p>Maintaining the backend of the customer support tool by identifying and resolving errors in
-                            the the existing codebase
-                            (Django).</p>
-                        <p>Creating new features in Django to improve and ensure the best working experience of the
-                            customer support team.</p>
-                        <p>Collaborating with the other software engineers in the context of the company’s development
-                            department to develop new
-                            features in the company’s codebase and exchange best practices.</p>
+        
+        <!-- Experience -->
+        <section class="section" id="experience">
+            <div class="section-content">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item current">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="experience-card">
+                                <div class="experience-header">
+                                    <h3 class="job-title">Python Developer</h3>
+                                    <div class="company">Modulus S.A</div>
+                                    <div class="duration">
+                                        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                        January 2022 - Present
+                                    </div>
+                                </div>
+                                <div class="experience-content">
+                                    <ul class="achievements">
+                                        <li>Developing scalable backend systems with <strong>FastAPI, SQLModel, SQLAlchemy, MariaDB and Redis</strong></li>
+                                        <li>Maintaining and optimizing Django-based customer support tools, improving system reliability by identifying and resolving critical bugs</li>
+                                        <li>Designing and implementing new Django features that enhanced customer support team productivity</li>
+                                        <li>Collaborating with cross-functional development teams to deliver high-quality software solutions and establish best practices</li>
+                                    </ul>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">FastAPI</span>
+                                        <span class="tech-tag">Django</span>
+                                        <span class="tech-tag">SQLAlchemy</span>
+                                        <span class="tech-tag">MariaDB</span>
+                                        <span class="tech-tag">Redis</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">January 2022 - Currently</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Developer</h3>
-                        <div class="subheading mb-3">Alma Economics</div>
-                        <p>Creating interactive web apps for various projects using Django, PostgreSQL, Javascript,
-                            Bootstrap and hosting them on Heroku Cloud Platform. Managing company's internal databases
-                            and creating scripts in Python and Pandas.</p>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="experience-card">
+                                <div class="experience-header">
+                                    <h3 class="job-title">Developer</h3>
+                                    <div class="company">Alma Economics</div>
+                                    <div class="duration">
+                                        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                        January 2021 - January 2022
+                                    </div>
+                                </div>
+                                <div class="experience-content">
+                                    <ul class="achievements">
+                                        <li>Built interactive web applications using Django, PostgreSQL, and JavaScript</li>
+                                        <li>Deployed and managed applications on Heroku Cloud Platform</li>
+                                        <li>Managed internal databases and created data processing scripts with Python and Pandas</li>
+                                    </ul>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Django</span>
+                                        <span class="tech-tag">PostgreSQL</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">Bootstrap</span>
+                                        <span class="tech-tag">Heroku</span>
+                                        <span class="tech-tag">Pandas</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">January 2021 - January 2022</span></div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="experience-card">
+                                <div class="experience-header">
+                                    <h3 class="job-title">Machine Learning Intern</h3>
+                                    <div class="company">Tomas Bata University in Zlin</div>
+                                    <div class="duration">
+                                        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                        February 2019 - May 2019
+                                    </div>
+                                </div>
+                                <div class="experience-content">
+                                    <ul class="achievements">
+                                        <li>Implemented Support Vector Machines (SVM) algorithm from scratch in Mathematica</li>
+                                        <li>Developed SVM implementation in Python 3 for performance comparison</li>
+                                        <li>Gained hands-on experience with machine learning algorithms and mathematical modeling</li>
+                                    </ul>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Mathematica</span>
+                                        <span class="tech-tag">Machine Learning</span>
+                                        <span class="tech-tag">SVM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="experience-card">
+                                <div class="experience-header">
+                                    <h3 class="job-title">Software Developer</h3>
+                                    <div class="company">Direct Solutions</div>
+                                    <div class="duration">
+                                        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                        October 2017 - August 2018
+                                    </div>
+                                </div>
+                                <div class="experience-content">
+                                    <ul class="achievements">
+                                        <li>Developed REST APIs using Slim framework (PHP) and MySQL</li>
+                                        <li>Contributed to front-end development with Bootstrap 4 and Twig Templates</li>
+                                        <li>Collaborated on full-stack web application development</li>
+                                    </ul>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">PHP</span>
+                                        <span class="tech-tag">Slim Framework</span>
+                                        <span class="tech-tag">MySQL</span>
+                                        <span class="tech-tag">Bootstrap</span>
+                                        <span class="tech-tag">Twig</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Sales Consultant</h3>
-                        <div class="subheading mb-3">Dixons South East Europe</div>
-                        <p>Working as part-time sales consultant in the field of technology.</p>
-                        <p>In my free time:
-                        <p>1) Developed Class Management Tool a web app that helps teachers keep
-                            track of their students’ scores and progress in python 3 and
-                            Django. See more here
-                            <a href="https://github.com/polykarposT/Class-Management-Tool">Class Management Tool</a>.
+            </div>
+        </section>
+        
+        <!-- Education -->
+        <section class="section" id="education">
+            <div class="section-content">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3 class="degree-title">Bachelor of Science in Computer Science</h3>
+                            <div class="institution">University of Applied Sciences of Central Greece</div>
+                            <div class="duration">
+                                <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                September 2012 - November 2019
+                            </div>
+                            <p class="education-description">
+                                Comprehensive study of computer science fundamentals, software engineering principles, 
+                                and modern programming practices.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-globe-europe" aria-hidden="true"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3 class="degree-title">Exchange Student - Computer Science</h3>
+                            <div class="institution">Tomas Bata University in Zlin</div>
+                            <div class="duration">
+                                <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                February 2016 - June 2016
+                            </div>
+                            <p class="education-description">
+                                Six-month international study experience through Erasmus+ programme in Czech Republic, 
+                                focusing on advanced computer science topics and cross-cultural collaboration.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills -->
+        <section class="section" id="skills">
+            <div class="section-content">
+                <h2 class="section-title">Technical Skills</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                            Programming Languages
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-python" aria-hidden="true"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js" aria-hidden="true"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-php" aria-hidden="true"></i>
+                                <span>PHP</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-java" aria-hidden="true"></i>
+                                <span>Java</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-layer-group" aria-hidden="true"></i>
+                            Frameworks & Libraries
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fas fa-rocket" aria-hidden="true"></i>
+                                <span>Django</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-bolt" aria-hidden="true"></i>
+                                <span>FastAPI</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react" aria-hidden="true"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-bootstrap" aria-hidden="true"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-database" aria-hidden="true"></i>
+                            Databases & Tools
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fas fa-database" aria-hidden="true"></i>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database" aria-hidden="true"></i>
+                                <span>MariaDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-memory" aria-hidden="true"></i>
+                                <span>Redis</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt" aria-hidden="true"></i>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-cogs" aria-hidden="true"></i>
+                            Development Practices
+                        </h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">Full-Stack Development</span>
+                            <span class="skill-tag">Backend Development</span>
+                            <span class="skill-tag">Agile & Scrum</span>
+                            <span class="skill-tag">Test-Driven Development</span>
+                            <span class="skill-tag">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Certifications & Achievements -->
+        <section class="section" id="achievements">
+            <div class="section-content">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-certificate" aria-hidden="true"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Build REST API with Python and Django</h3>
+                            <p class="achievement-provider">Udemy Certification</p>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-certificate" aria-hidden="true"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Python and Django Full Stack Web Developer Bootcamp</h3>
+                            <p class="achievement-provider">Udemy</p>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy" aria-hidden="true"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Battlehack Athens 2015</h3>
+                            <p class="achievement-provider">Best SendGrid API Implementation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-certificate" aria-hidden="true"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Microsoft Office Specialist Master Certification</h3>
+                            <p class="achievement-provider">Microsoft</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="section-content">
+                <h2 class="section-title">Let's Work Together</h2>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p class="contact-description">
+                            I'm always interested in hearing about new opportunities, whether it's a full-time role, 
+                            freelance project, or collaboration. Let's discuss how we can work together to bring your ideas to life.
                         </p>
-                        <p>2)Created BMI calculator in Flutter (Dart). See more here
-                            <a href="https://github.com/polykarposT/bmi_calculator-app">BMI Calculator App</a>.
-                        </p>
-                        <p>3)Created Django projects and learned React. See more here <a
-                                href="https://github.com/polykarposT">Github</a>.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:ptiftikoglou@gmail.com">ptiftikoglou@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <span>Veria, Greece</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                <div class="contact-details">
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/polykarpos-tiftikoglou-8a8762108/" target="_blank" rel="noopener noreferrer">Connect with me</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">November 2019 - September 2020</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Machine Learning Intern</h3>
-                        <div class="subheading mb-3">Tomas Bata University in Zlin</div>
-                        <p>The task was to implement a Support Vector Machines (SVM)
-                            algorithm in Mathematica from scratch without using the
-                            already built function of the programme. Also, during the
-                            internship, the SVM algorithm was implemented in python 3.</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">February 2019 - May 2019</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Software Developer</h3>
-                        <div class="subheading mb-3">Direct Solutions Innovative Applications and Services Private
-                            Company</div>
-                        <p>Back-end developer with the main responsibility of developing APIs
-                            using a Slim framework (PHP) and MySQL. Additionally, I assisted in
-                            the development of the front-end page using Bootstrap 4 and Twig Template.</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">October 2017 - August 2018</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Military Service</h3>
-                        <div class="subheading mb-3">Hellenic Army </div>
-                        <p>Professional driver and ski instructor.</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">September 2016 - May 2017</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Control Room Responsible</h3>
-                        <div class="subheading mb-3">Venus Growers</div>
-                        <p>Checking shield machines before the product underwent
-                            the heating process. The process results were stored in the
-                            company's database.</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">July 2012 - August 2012</span></div>
                 </div>
             </div>
         </section>
-        <hr class="m-0" />
-        <!-- Education-->
-        <section class="resume-section" id="education">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Education</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">University of Applied Sciences of Central Greece </h3>
-                        <div class="subheading mb-3">Bachelor of Science</div>
-                        <div>Computer Science</div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">September 2012 - November 2019</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Tomas Bata University in Zlin</h3>
-                        <div class="subheading mb-3">Computer Science</div>
-                        <p>6 month studies with Erasmus+ programme in Czech Republic</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">February 2016 - Juny 2016</span></div>
-                </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Polykarpos Tiftikoglou. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/polykarpos-tiftikoglou-8a8762108/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/polykarposT" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:ptiftikoglou@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
             </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Skills-->
-        <section class="resume-section" id="skills">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Skills</h2>
-                <div class="subheading mb-3">Programming Languages & Tools</div>
-                <ul class="list-inline dev-icons">
-                    <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-java"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-php"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-css3"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-bootstrap"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-linux"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-git"></i></li>
-                </ul>
-                <div class="subheading mb-3">Workflow</div>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        REST APIs
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Django
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Django Rest Framework
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Model View Controler
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Full Stack Development
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Backend Development
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Agile Development & Scrum
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Interests-->
-        <section class="resume-section" id="interests">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Interests</h2>
-                <p>Apart from being a software developer, I love travelling and exploring new countries and cultures. I
-                    love photography and doing sports.</p>
-                <p class="mb-0">Also, I like watching series and movies, I love food and I like exploring the latest
-                    technology advances.</p>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Awards-->
-        <section class="resume-section" id="awards">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Awards & Certifications</h2>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Build REST API with Python and Django - Udemy Certification
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Python and Django Full Stack Web Developer Bootcamp - Udemy
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Battlehack Athens 2015 by Braintree wining partners prize for Best SendGrid API implementation
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Microsoft Office Specialist Master Certification - Microsoft
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Open Water Diver - PADI
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Group Leader - Erasmus Student Network Certification
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        </div>
+    </footer>
+
+    <!-- Modern JS -->
     <script src="js/scripts.js"></script>
 </body>
 
